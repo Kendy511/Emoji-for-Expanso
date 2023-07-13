@@ -1,0 +1,209 @@
+matches:
+
+  # Emojis
+  - trigger: ";avo.e" 
+    replace: "🥑"
+  - trigger: ";brain.e"
+    replace: "🧠"
+  - trigger: ";cross.e"
+    replace: "❌"
+  - trigger: ";dice.e"
+    replace: "🎲"
+  - trigger: ";es.e"
+    replace: "🇪🇸"
+  - trigger: ";fire.e"
+    replace: "🔥"
+  - trigger: ";green.e"
+    replace: "🟢"
+  - trigger: ";head.e"
+    replace: "🎧"
+  - trigger: ";idea.e"
+    replace: "💡"
+  - trigger: ";live.e"
+    replace: "🔴"
+  - trigger: ";orange.e"
+    replace: "🟠"
+  - trigger: ";pen.e"
+    replace: "🖊️"
+  - trigger: ";pencil.e"
+    replace: "📝"
+  - trigger: ";pt.e"
+    replace: "🇵‍🇹"
+  - trigger: ";ques.e"
+    replace: "❓"
+  - trigger: ";skull.e"
+    replace: "💀"
+  - trigger: ";target.e"
+    replace: "🎯"
+  - trigger: ";video.e"
+    replace: "🎥"
+  - trigger: ";woman.e"
+    replace: "👩‍🦰"
+  - trigger: ";plane.e"
+    replace: "✈️"
+  - trigger: ";check.e"
+    replace: "✅"
+  - trigger: ";sweat.e"
+    replace: "😅"
+  - trigger: ";star.e"
+    replace: "⭐"
+  - trigger: ";wand.e"
+    replace: "🪄"
+
+  # Flags
+  - trigger: ";flag.es"
+    replace: "🇪🇸"
+  - trigger: ";flag.de"
+    replace: "🇩🇪"
+  - trigger: ";flag.au"
+    replace: "🇳🇿"
+  - trigger: ";flag.ph"
+    replace: "🇵🇭"
+  - trigger: ";flag.nl"
+    replace: "🇳🇱"
+  - trigger: ";flag.pt"
+    replace: "🇵🇹"
+  - trigger: ";flag.us"
+    replace: "🇺🇸"
+
+  # Emoji of Kendy
+  ## Type Of Data
+
+  - trigger: ".q " #Define của người khác, other people explain, văn phong diễn giải của tác giả
+    replace: "▄ "
+  - trigger: ".q1 " #Define của chính mình, own explain, định nghĩa của mình
+    replace: "▀ "
+  - trigger: ".+ " #Other people khuyên nên làm, hint, guide
+    replace: "💧 "
+  - trigger: ".- " #Other people khuyên không nên làm (should not do)
+    replace: "🩸 "
+  - trigger: ".+1 " #Own tự đề xuất nên làm, I Should do
+    replace: "🐟 "
+  - trigger: ".-1 " #Own tự đề xuất ko nên làm, I shouldnt do
+    replace: "💀 "
+
+  - trigger: ".p "
+    replace: "🦄 " #Pros, Advantage, Strength
+  - trigger: ".c "
+    replace: "🦐 " #Cons, Disadvantage, Weakness
+ 
+  - trigger: ".? " #thắc mắc, câu hỏi
+    replace: "❓ "
+  - trigger: ".s " #solution, answers
+    replace: "💊 "
+  - trigger: ".g" #Goal
+    replace: "🎯"
+  - trigger: ".s2 " #shopping.
+    replace: "🛒 "
+  - trigger: ".t " #task
+    replace: "⚙️ "
+  - trigger: ".p1" #pain points, problems
+    replace: "💢"
+  - trigger: ".k1 " #keyword
+    replace: "αþ: "
+  - trigger: ".i " #idea
+    replace: "💡 "
+  - trigger: ".i1 " #infor
+    replace: "ℹ️ "
+  - trigger: ".e " #example
+    replace: "♣ "
+  - trigger: ".r1 " #reward
+    replace: "🏆 "
+  - trigger: ".a1 " #assumption (giả thiết)
+    replace: "🐰 "
+  - trigger: ".l " #location
+    replace: "🚡 "
+  - trigger: ".n1 " #need
+    replace: "🎏 "
+  - trigger: ".w1 " #want
+    replace: "🦞 "
+
+  - trigger: ".o " #tldr cho từng block-level
+    replace: "✂ "
+  - trigger: ".e1 " #expand, mở rộng, evergreen
+    replace: "🌳 "
+  - trigger: ".s1 " #summary tổng cả note
+    replace: "📌 "
+  - trigger: ".t1 " #tips, tricks, mẹo vặt
+    replace: "🚀 "
+  - trigger: ".b1 " #bug
+    replace: "🐞 "
+
+  ## State of Data
+  - trigger: ".* " #ý quan trọng, vượt ngoài phạm vi current note
+    replace: "⭐️ "
+  - trigger: ".k " #ý chính, nằm trong phạm vị current note
+    replace: "🔑 "
+  - trigger: ".d " #next action, do
+    replace: "🏃 "
+  - trigger: ".& " #link to, relationship, level 3 Bloom taxonamy
+    replace: "🔗 "
+  - trigger: ".>< " #Opposite
+    replace: "⚔️ "
+  - trigger: ".f " #cấp bách, high urgent
+    replace: "🔥 "
+  - trigger: ".c1 " #conflict
+    replace: "💥 "
+  - trigger: ".h1 " #hate
+    replace: "😡 "
+  - trigger: ".l1 " #love
+    replace: "❣ "
+  - trigger: ".j " #awareness 
+    replace: "👀 "
+  - trigger: ".! " #chú ý
+    replace: "❗️ "
+  - trigger: ".c2 " #Cân nhắc
+    replace: "🤔 "
+  - trigger: ".m " # can monetize
+    replace: "🤑 "
+  - trigger: ".o1 " #opportunity
+    replace: "💎 "
+  - trigger: ".t2 " #threaten
+    replace: "🚧 "
+
+
+  ## Action Required Statement
+  - trigger: ".a " #cần hỏi expert, mentor, người có trình độ cao hơn mình
+    replace: "🗣️ "
+  - trigger: ".b " #cần brainstorm bằng mindmap, whiteboard
+    replace: "🧠 "
+  - trigger: ".r " #cần research, cần đọc document
+    replace: "🔍 "
+  - trigger: ".r2 " #nên tham khảo, reference
+    replace: "🧐 "
+  - trigger: ".d1 " #cần hẹn gặp, appointment 
+    replace: "👨🏻‍🤝‍👨🏻 " 
+  - trigger: ".d2 " #cần make decision
+    replace: "♟️ "
+  - trigger: ".< " #cần lên lịch, lên calendar
+    replace: "📆 "
+  - trigger: ".> " # cần được migrate, move sang other folder
+    replace: "🕊️ "
+  - trigger: ".e2 " #cần định lượng, đánh giá lại giả thiết, tìm evidence
+    replace: "⚖️ "  
+
+  ## Navigation & Relation
+  - trigger: "g1 " #tăng, increase 
+    replace: "↑ "
+  - trigger: "g11 " #tăng mạnh, increase 
+    replace: "⬆ "
+  - trigger: "g2 " #giảm, decrease
+    replace: "↓ "
+  - trigger: "g21 " #giảm, decrease
+    replace: "⬇ "
+  
+  - trigger: "g3 " #next siblings
+    replace: "→ "
+  - trigger: "g31 " #previous siblings
+    replace: "← "
+  - trigger: "g5 " #tương đương, suy ra được 2 chiều, từ điều kiện cần suy ra 2 chiều, 1 dạng siblings
+    replace: "⇄ "
+ 
+  - trigger: "g4 " #suy ra, từ điều kiện cần suy ra 1 chiều, Children
+    replace: "⇒ "
+  - trigger: "g41 " #suy ra ngược, từ điều kiện cần suy ra 1 chiều, Parent
+    replace: "⇐ "
+
+  - trigger: "g6 " #tổng
+    replace: "Σ"
+  

@@ -1,0 +1,208 @@
+matches:
+
+  # Tech
+  - trigger: ";bug"
+    replace: |
+              Steps to reproduce: 
+
+              Expected result: 
+
+              Actual result: 
+  - trigger: ";gat"
+    replace: "Gatling"
+  - trigger: ";jm"
+    replace: "JMeter"
+  - trigger: ";pp"
+    replace: "Puppeteer"
+  - trigger: ";pw"
+    replace: "Playwright"
+  - trigger: ";cyp"
+    replace: "Cypress"
+  - trigger: ";jen"
+    replace: "Jenkins"
+  - trigger: ";js"
+    replace: "JavaScript"
+  - trigger: ";loadgen"
+    replace: "load generator"
+  - trigger: ";otc"
+    replace: "on the cloud"
+  - trigger: ";lr"
+    replace: "LoadRunner"
+  - trigger: ";lt"
+    replace: "load testing"
+  - trigger: ";msba"
+    replace: "microservices-based architecture"
+  - trigger: ";prom"
+    replace: "Prometheus"
+  - trigger: ";prw"
+    replace: "Prometheus Remote Write"
+  - trigger: ";sel"
+    replace: "Selenium"
+  - trigger: ";tb"
+    replace: "Test Builder"
+  - trigger: ";fb"
+    replace: "Facebook"
+  - trigger: ";yt"
+    replace: "YouTube"
+  - trigger: ";kub"
+    replace: "kubectl"
+  - trigger: ";k8s"
+    replace: "Kubernetes"
+  - trigger: ";mon"
+    replace: "Monitoring"
+  - trigger: ";mmon"
+    replace: "monitoring"
+  - trigger: ";o11"
+    replace: "Observability"
+  - trigger: ";oo11"
+    replace: "observability"
+  - trigger: ";gist"
+    replace: "https://gist.github.com/"
+  - trigger: ";gh"
+    replace: "https://github.com/"
+
+  # Grafana Labs/k6
+  - trigger: ";koh"
+    replace: "k6 Office Hours"
+  - trigger: ";invitekoh"
+    replace: |
+              Hey! The link to the streaming platform is ${STREAMYARD_LINK_HERE}
+              
+              However, for sharing purposes, the video itself will be live here: ${YOUTUBE_LINK_HERE} and the recording will also be saved on that link afterwards.
+
+              This invitation is for 15 minutes before broadcast time so that we can all do a tech check for audio/video/screenshare settings. Looking forward to it! :)
+  - trigger: ";gc"
+    replace: "Grafana Cloud"
+  - trigger: ";gl"
+    replace: "Grafana Labs"
+  - trigger: ";graf"
+    replace: "Grafana"
+  - trigger: ";kc"
+    replace: "k6 Cloud"
+  - trigger: ";gk6"
+    replace: "Grafana Cloud k6"
+  - trigger: ";me.k6.e"
+    replace: "nicole@k6.io"
+  - trigger: ";k6.yt"
+    replace: "https://youtube.com/k6test"
+  - trigger: ";k6.live"
+    replace: "https://www.youtube.com/c/k6test/live"
+  - trigger: ";me.li.e"
+    replace: "nicole@loadimpact.com"
+  - trigger: ";me.glmast"
+    replace: "https://grafana.social/@nicole"
+  - trigger: ";playlist.kc"
+    replace: "https://www.youtube.com/watch?v=ncxCIuo5tUU&list=PLJdv3RhAQXNGkRCp7Q0k77n5jif4qjz2o"
+  - trigger: ";playlist.koh"
+    replace: "https://www.youtube.com/playlist?list=PLJdv3RhAQXNE1TFXn2pp9h_Ul1q_kJrEZ"
+  - trigger: ";playlist.goh"
+    replace: "https://www.youtube.com/watch?v=uk7NoagbJ28&list=PLDGkOdUX1Ujrrse-cdj20RRah9hyHdxBu"
+  - trigger: ";textkoh"
+    replace: |
+
+                ---
+
+                Contact Nicole:
+                Mastodon: https://pkm.social/@nicole
+                Site: https://nicolevanderhoeven.com
+                GitHub: https://github.com/nicolevanderhoeven
+
+                Contact Marie:
+                Twitter: https://twitter.com/mcruzdrake
+                Site: https://www.testingwithmarie.com/
+
+                Learn more about k6:
+                Website: https://k6.io
+                Repo: https://github.com/grafana/k6
+  - trigger: ";textmeetup"
+    replace: |
+                This is a live event, and you can catch us on one of the following platforms:
+                YouTube
+                Twitch
+                LinkedIn
+
+                This event will be recorded, and the recording will be immediately available on the same link on YouTube afterwards.
+
+  - trigger: ";ocr"
+    replace: "ObservabilityCON on the Road"
+  - trigger: ";graa"
+    replace: "Grafana Agent"
+  - trigger: ";gkm"
+    replace: "Grafana Kubernetes Monitoring"
+  - trigger: ";k6"
+    replace: |
+              import http from "k6/http";
+              import { sleep, check } from "k6";
+              import { randomIntBetween } from "https://jslib.k6.io/k6-utils/1.1.0/index.js";
+
+              // export const options = {
+              //     scenarios: {
+              //         home: {
+              //             executor: 'ramping-vus',
+              //             exec: 'homepage',
+              //             startVUs: 0,
+              //             stages: [
+              //                 { duration: "30s", target: 20 },
+              //                 { duration: "10m", target: 20 },
+              //                 { duration: "30s", target: 0}
+              //             ],
+              //         },
+              //         dispatch: {
+              //             executor: 'ramping-vus',
+              //             exec: 'dispatch',
+              //             startVUs: 0,
+              //             stages: [
+              //                 { duration: "30s", target: 10 },
+              //                 { duration: "10m", target: 10 },
+              //                 { duration: "30s", target: 0}
+              //             ]
+              //         }
+              //     },
+              //     thresholds: { 
+              //         http_req_duration: ['p(95) < 1000'], // Response times average below 1s
+              //         http_req_failed: ['rate < 0.01'],  // Error rate below 1%
+              //       },
+              //     ext : { 
+              //         loadimpact: {
+              //           projectID: ,
+              //           name: "",
+              //           distribution: {
+              //             'amazon:us:ashburn': { loadZone: 'amazon:us:ashburn', percent: 50 },
+              //             'amazon:de:frankfurt': { loadZone: 'amazon:de:frankfurt', percent: 30 },
+              //             'amazon:au:sydney': { loadZone: 'amazon:au:sydney', percent: 20 },
+              //           },
+              //         },
+              //       },
+              // }
+
+              export default function () {
+
+              }
+  - trigger: ";goh"
+    replace: "Grafana Office Hours"
+  - trigger: ";text.goh"
+    replace: |                          
+            ---
+
+            Contact Nicole:
+            Mastodon: https://pkm.social/@nicole
+            GitHub: https://github.com/nicolevanderhoeven
+            Site: https://nicolevanderhoeven.com
+
+            Contact Torkel:
+            Mastodon: https://hachyderm.io/@torkelo
+            GitHub: https://github.com/torkelo
+            Site: http://www.codinginstinct.com/
+
+            Learn more about Grafana Labs:
+            Website: https://grafana.com
+            Repo: https://github.com/grafana/grafana
+
+
+  # Adobo & Avocados
+  - trigger: ";ana.f"
+    replace: "Adobo & Avocados"
+  - trigger: ";ana.s"
+    replace: "A&A"
+  - trigger: ";ana.yt"
+    replace: "https://www.youtube.com/@adoboandavocados"
