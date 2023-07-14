@@ -160,6 +160,8 @@ matches:
     replace: "💎 "
   - trigger: ".t2 " #threaten
     replace: "🚧 "
+  - trigger: ".c3 " #canceled 
+    replace: "🚫 " 
 
 
   ## Action Required Statement
